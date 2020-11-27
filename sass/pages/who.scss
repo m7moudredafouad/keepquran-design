@@ -1,0 +1,10 @@
+.who{
+    grid-column: 2/3;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    & h3 {
+        margin-top: 2rem;
+    }
+}

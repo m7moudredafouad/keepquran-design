@@ -1,0 +1,38 @@
+.btn {
+	font-family: 'Cairo', sans-serif;
+	cursor: pointer;
+	padding: 0.5rem 2rem;
+	color: var(--white);
+	font-size: 2rem;
+
+	outline: none;
+
+	background: var(--btnColor);
+	// border: 0.1rem solid var(--btnColor);
+	border: none;
+
+	transition: var(--transTime);
+
+	&-sm {
+		font-size: 1.6rem;
+		padding: 0.1rem 1rem;
+		margin: 0 0.1rem;
+
+		@include respond(v600) {
+			font-size: 1.4rem;
+			padding: 0.05rem 0.5rem;
+		}
+	}
+
+	&:hover {
+		background: lighten(#313131, 5);
+		// border: 0.1rem solid var(--btnHoverColor);
+	}
+
+	&-green {
+		background-color: #376e37;
+		&:hover {
+			background-color: lighten(#376e37, 15);
+		}
+	}
+}

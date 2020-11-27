@@ -1,0 +1,38 @@
+.player {
+	display: flex;
+	direction: ltr;
+	align-items: center;
+	justify-content: space-around;
+	color: var(--white);
+
+	& svg {
+		width: 4rem;
+		height: 4rem;
+		fill: var(--white);
+		cursor: pointer;
+	}
+
+	&_controls {
+		display: flex;
+		margin-right: 2rem;
+	}
+
+	&_timer {
+		margin: 0 2rem;
+		font-size: 2rem;
+	}
+
+	&_progress {
+		background-color: var(--btnColor);
+		flex: 1;
+		height: 1rem;
+
+		&-meter {
+			height: 1rem;
+			background-color: var(--medWhite);
+			min-width: 0%;
+			width: 0%;
+			max-width: 100%;
+		}
+	}
+}

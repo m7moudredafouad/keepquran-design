@@ -1,0 +1,36 @@
+.start {
+	grid-column: 2/3;
+
+	&_starting {
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		max-width: 30rem;
+		min-width: 20rem;
+	}
+
+	&_hadith {
+		font-family: 'Amiri', serif;
+		margin: 6rem auto 0 auto;
+		max-width: 50rem;
+		min-width: 35rem;
+		font-size: 1.9rem;
+	}
+}
+
+.form {
+	font-family: 'Cairo', sans-serif;
+	display: flex;
+	flex-direction: column;
+
+	&_input {
+		font-family: inherit;
+		font-size: 1.6rem;
+		padding: 0.2rem 1rem;
+		outline: none;
+		color: var(--medWhite);
+		background-color: var(--searchBoxColor);
+		border: 0.1rem solid var(--searchBoxColor);
+		margin-bottom: 2rem;
+	}
+}

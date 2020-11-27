@@ -1,0 +1,19 @@
+.nav {
+	grid-column: 1/-1;
+	background-color: var(--navColor);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: fit-content;
+
+	&_list {
+		display: flex;
+
+		&-link {
+			padding: 1rem;
+			&:hover {
+				background-color: var(--lightWhite);
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(black, 0.8);
+	z-index: 1;
+	display: flex;
+
+	&_container {
+		background-color: var(--searchBoxColor);
+		// position: absolute;
+		// top: 50%;
+		// left: 50%;
+		// transform: translate(-50%, -50%);
+		padding: 1rem;
+		border-radius: 0.3rem;
+		max-width: 70rem;
+		max-height: 70rem;
+
+		margin: auto;
+	}
+
+	&_header {
+		font-size: 1.8rem;
+		padding: 0.5rem 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&-close {
+			cursor: pointer;
+			font-size: 2rem;
+			color: var(--white);
+			background: none;
+			border: 0.1rem solid var(--white);
+			padding: 0.5rem 1rem;
+			border-radius: 6rem;
+			outline: none;
+			transition: var(--transTime);
+
+			&:hover {
+				color: var(--searchBoxColor);
+				background: var(--white);
+			}
+		}
+	}
+
+	&_body {
+		margin: 1rem 0;
+		max-height: 60rem;
+		padding: 1rem 2rem;
+
+		overflow-y: auto;
+	}
+}

@@ -1,0 +1,104 @@
+:root {
+	--baseColor: #181818;
+	--navColor: #202020;
+	--boxColor: #212121;
+	--btnColor: #313131;
+	--btnHoverColor: lighten(#313131, 15);
+	--searchBoxColor: #121212;
+
+	--white: #ffffffde;
+	--medWhite: #fff9;
+	--disabled: #ffffff61;
+	--lightWhite: #ffffff1a;
+
+	--transTime: 0.2s;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	@include respond(v800) {
+		font-size: 50%;
+	}
+}
+
+// width
+::-webkit-scrollbar {
+	width: 0.5rem;
+	height: 0.5rem;
+}
+
+// Track
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+// Handle
+::-webkit-scrollbar-thumb {
+	background: var(--disabled);
+}
+
+// Handle on hover
+::-webkit-scrollbar-thumb:hover {
+	background: var(--medWhite);
+}
+
+body {
+	font-family: 'Cairo', sans-serif;
+	direction: rtl;
+	color: var(--white);
+	background-color: var(--baseColor);
+
+	line-height: 1.6;
+	font-size: 1.6rem;
+	font-weight: 400;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 30% 40% 30%;
+
+	@include respond(v1400) {
+		grid-template-columns: 25% 50% 25%;
+	}
+
+	@include respond(v1100) {
+		grid-template-columns: 20% 60% 20%;
+	}
+
+	@include respond(v900) {
+		grid-template-columns: 15% 70% 15%;
+	}
+
+	@include respond(v800) {
+		grid-template-columns: 10% 80% 10%;
+	}
+
+	@include respond(v600) {
+		grid-template-columns: 5% 90% 5%;
+	}
+
+	@include respond(v450) {
+		grid-template-columns: 4% 92% 4%;
+	}
+}
